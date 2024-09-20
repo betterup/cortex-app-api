@@ -1,0 +1,125 @@
+---
+http_interactions:
+  - request:
+      method: put
+      uri: https://api.getcortexapp.com/api/v1/catalog/custom-data
+      body:
+        encoding: UTF-8
+        string:
+          '{"values":{"betterup-monolith":[{"key":"code-ownership","value":22.94,"description":"Percentage
+          of files with ownership"},{"key":"system-ownership","value":52,"description":"Number
+          of systems with ownership"}]}}'
+      headers:
+        Content-Type:
+          - application/json
+        Authorization:
+          - Bearer <access_token>
+        Accept-Encoding:
+          - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+        Accept:
+          - "*/*"
+        User-Agent:
+          - Ruby
+    response:
+      status:
+        code: 200
+        message: OK
+      headers:
+        Date:
+          - Tue, 20 Dec 2022 00:02:16 GMT
+        Content-Type:
+          - application/json
+        Vary:
+          - Accept-Encoding,Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+        Tenant-Id:
+          - "180"
+        X-Content-Type-Options:
+          - nosniff
+        X-Xss-Protection:
+          - 1; mode=block
+        Cache-Control:
+          - no-cache, no-store, max-age=0, must-revalidate
+        Pragma:
+          - no-cache
+        Expires:
+          - "0"
+        Strict-Transport-Security:
+          - max-age=31536000 ; includeSubDomains
+        X-Frame-Options:
+          - DENY
+        X-Appengine-Flex-Applatency:
+          - "0.161"
+        Via:
+          - 1.1 google
+        Alt-Svc:
+          - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+        Transfer-Encoding:
+          - chunked
+      body:
+        encoding: ASCII-8BIT
+        string:
+          '{"values":[{"id":379921,"key":"code-ownership","value":22.94,"source":"API","dateUpdated":"2022-12-19T23:45:46.922281","description":"Percentage
+          of files with ownership"},{"id":388281,"key":"system-ownership","value":52,"source":"API","dateUpdated":"2022-12-19T23:30:56.396648","description":"Number
+          of systems with ownership"}]}'
+    recorded_at: Tue, 20 Dec 2022 00:02:16 GMT
+  - request:
+      method: post
+      uri: https://api.getcortexapp.com/api/v1/catalog/betterup-monolith/custom-data
+      body:
+        encoding: UTF-8
+        string:
+          '{"key":"code-ownership","value":22.94,"description":"Percentage of
+          files with ownership"}'
+      headers:
+        Content-Type:
+          - application/json
+        Authorization:
+          - Bearer <access_token>
+        Accept-Encoding:
+          - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+        Accept:
+          - "*/*"
+        User-Agent:
+          - Ruby
+    response:
+      status:
+        code: 200
+        message: OK
+      headers:
+        Date:
+          - Tue, 20 Dec 2022 00:02:16 GMT
+        Content-Type:
+          - application/json
+        Vary:
+          - Accept-Encoding,Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+        Tenant-Id:
+          - "180"
+        X-Content-Type-Options:
+          - nosniff
+        X-Xss-Protection:
+          - 1; mode=block
+        Cache-Control:
+          - no-cache, no-store, max-age=0, must-revalidate
+        Pragma:
+          - no-cache
+        Expires:
+          - "0"
+        Strict-Transport-Security:
+          - max-age=31536000 ; includeSubDomains
+        X-Frame-Options:
+          - DENY
+        X-Appengine-Flex-Applatency:
+          - "0.136"
+        Via:
+          - 1.1 google
+        Alt-Svc:
+          - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+        Transfer-Encoding:
+          - chunked
+      body:
+        encoding: ASCII-8BIT
+        string:
+          '{"id":379921,"key":"code-ownership","value":22.94,"source":"API","dateUpdated":"2022-12-19T23:45:46.922281","description":"Percentage
+          of files with ownership"}'
+    recorded_at: Tue, 20 Dec 2022 00:02:16 GMT
+recorded_with: VCR 6.1.0

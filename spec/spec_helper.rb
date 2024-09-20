@@ -13,3 +13,14 @@ RSpec.configure do |config|
     c.syntax = :expect
   end
 end
+
+require 'vcr'
+VCR.configure do |config|
+  config.ignore_localhost = true
+  config.cassette_library_dir = 'spec/fixtures/cassettes'
+  config.hook_into :webmock
+  config.configure_rspec_metadata!
+end
+
+require 'webmock/rspec'
+WebMock.disable_net_connect!(allow_localhost: true)
