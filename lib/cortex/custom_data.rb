@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Cortex
-  # API client to interact with Cortex [custom data](https://docs.cortex.io/docs/reference/basics/custom-data)
+  # API client to interact with Cortex {https://docs.cortex.io/docs/reference/basics/custom-data custom data}
   class CustomData < Api
     # POSTs custom data to Cortex for a specific entity
     #
