@@ -18,7 +18,7 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
 ## Usage
 
-TODO: Write usage instructions here
+See [RubyDoc](https://rubydoc.info/github/betterup/cortex_app/)
 
 ## Development
 
